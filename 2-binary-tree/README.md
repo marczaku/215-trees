@@ -92,6 +92,9 @@ define Tree<T>
    procedure GetValue(n)
       return nodes at index n
    end procedure
+   procedure SetValue(n, value)
+      set nodes at index n to value
+   end procedure
 end define
 ```
 
@@ -111,6 +114,9 @@ define Node<T>
    end procedure
    procedure GetValue()
       return tree.GetValue(index)
+   end procedure
+   procedure SetValue(T value)
+      return tree.SetValue(index, value)
    end procedure
 end define
 ```
