@@ -32,9 +32,10 @@ else
          
       If data found
          return node
-   endwhile 
-   
-   return data not found
+	 
+      If there is no subtree
+         return data not found
+   endwhile
    
 end if
 ```
