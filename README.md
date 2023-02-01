@@ -20,9 +20,9 @@ Implement a simple Binary Search Tree `TurboBinarySearchTree` or `TurboBinarySea
 - `GetInOrder`: same as GetEnumerator 
 - `GetInReverseOrder`: returns all items in reverse order, from max to min
 - `Clone`: creates a clone of the tree
-- `Delete`: deletes the tree, but node by node (set the value to 0, then set left to `null` and right to `null`)
 
 ## Excellent Criteria
+- `Delete`: deletes the tree, but node by node (set the value to 0, then set left to `null` and right to `null`)
 - Implement the Tree using an `Array` to store all values instead of `Node`-classes.
 
 ## Bonus (Insane)
