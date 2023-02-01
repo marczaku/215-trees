@@ -17,7 +17,7 @@ A Binary Search Tree is a special kind of Binary Tree in which for each node, th
 
 ### Search
 
-Searching works very similar to Binary Search in a sorted collection. But instead of calculatung the next indes as the average between `min` and `max`, we just need to choose the `left` or `right` child on each node:
+Searching works very similar to Binary Search in a sorted collection. But instead of calculating the next index as the average between `min` and `max`, we just need to choose the `left` or `right` child on each node:
 
 ```
 If root.data is equal to search.data
