@@ -13,9 +13,16 @@ A tree is a hierarchical Data Structure with one Root Node. It is used whenever 
 - More use cases are covered by more Specialized Trees
 
 ## Passing Criteria
-Implement a simple Binary Search Tree `TurboBinarySearchTree` or `TurboBinarySearchTree<T> where T:IComparable<T>` without Balancing Algorithms. It should have these methods:
+Implement either
+- a simple Binary Search Tree `TurboBinarySearchTree` (Easy)
+- or a `TurboBinarySearchTree<T> where T:IComparable<T>` (C#, Hard)
+- or a `template<typename T>` (C++, Medium)
 
-- `void Insert`, `bool Search` (returns `true` if found), `bool Delete` (returns `true` if found and deleted), 
+Either way: without Balancing Algorithms. It should have these methods:
+
+- `void Insert(T)` (inserts a new item into the tree)
+- `bool Search(T)` (returns `true` if found)
+- `bool Delete(T)` (returns `true` if found and deleted), 
 - Iterator Pattern: returns all items in order, from min to max
   - Think about, which Traversal method you need to use
   - In C#, think about using `yield` in combination with `IEnumerable<T>` and `GetEnumerator()`
@@ -52,8 +59,10 @@ Debug.Log("Found 50002: " + tree.Search(50002)); // should return false
   - In C++, you can use the signature `Iterator rbegin()` and `Iterator rend()`
 - `Clone`: creates a clone of the tree
 - `Delete`: deletes the tree, but node by node (set the value to 0, then set left to `null` and right to `null`)
-- Implement the Tree using an `Array` to store all values instead of `Node`-classes.
 
-## Bonus (Insane)
+## Bonus 1 (Medium)
+Implement the Tree using an `Array` to store all values instead of `Node`-classes.
+
+## Bonus 2 (Very Difficult!)
 
 Try yourself at a Balancing Binary Search Tree implementation
